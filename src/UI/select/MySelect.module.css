@@ -1,0 +1,12 @@
+.MySelect {
+    width: 160px;
+    height: 25px;
+    background-color: #C5C6C7;
+    border: none;
+    border-radius: 10px;
+}
+
+.MySelect option {
+    font-family: "Josefin Sans", sans-serif;
+    color: black;
+}

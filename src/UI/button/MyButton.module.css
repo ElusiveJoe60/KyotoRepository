@@ -1,0 +1,19 @@
+.myButton {
+    width: 70%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #66FCF1;
+    border: 1px solid #0B0C10;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    color: #0B0C10;
+    font-size: 14px;
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myButton:hover {
+    background-color: #4fbdb7;
+}

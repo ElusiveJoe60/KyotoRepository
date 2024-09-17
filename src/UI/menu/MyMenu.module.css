@@ -1,0 +1,84 @@
+.burger_checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.burger {
+    cursor: pointer;
+    position: fixed;
+    left: 15px; 
+    top: 15px; 
+    background: transparent;
+    width: 30px;
+    height: 26px;
+    z-index: 10;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #66FCF1;
+}
+
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #66FCF1;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+
+.burger_checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger_checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+}
+
+.menu_list {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: grid;
+    gap: 12px;
+    padding: 74px 0;
+    margin: 0;
+    background: #1a1c25;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+    border-radius: 0 15px 15px 15px;
+}
+
+.menu_item {
+    display: block;
+    padding: 8px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #C5C6C7;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu_item:hover {
+    background: rgba(255,255,255,.2);
+}
+
+.burger_checkbox:checked ~ .menu_list {
+    transform: translateX(0);
+}
