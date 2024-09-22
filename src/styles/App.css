@@ -807,7 +807,7 @@ html, body {
 
 .count_item {
     position: absolute;
-    color: #fff;
+    color: #000;
     background-color: #66FCF1;
     border-radius: 25px;
     width: 20px;
