@@ -807,6 +807,7 @@ html, body {
 
 .count_item {
     position: absolute;
+    font-family: "Josefin Sans", sans-serif;
     color: #000;
     background-color: #66FCF1;
     border-radius: 25px;
