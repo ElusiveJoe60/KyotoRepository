@@ -6,9 +6,12 @@ import favoriteIcon from "../../images/favoriteIcon.svg"
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context";
 import MyButton from "../button/MyButton";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
-    const {isAuth, setIsAuth} = useContext(AuthContext)
+    const favoriteItems = useSelector((state) => state.favorites.items);
+    const products = useSelector((state) => state.cart.items);
+    const {isAuth} = useContext(AuthContext)
     
     return (
         <div>
@@ -36,12 +39,14 @@ const Navbar = () => {
                         </li>
                         <li className="navbar__links__items__list">
                             <Link to="/favorite" className="favorite_link">
+                                {favoriteItems.length > 0 && <span className="count_item">{favoriteItems.length}</span>}
                                 <img src={favoriteIcon} alt="Перейти на страницу избранного"/>
                                 <p className="text">Избранное</p>
                             </Link>
                         </li>
                         <li className="navbar__links__items__list">
                             <Link to="/basket" className="basket_link">
+                                {products.length > 0 && <span className="count_item">{products.length}</span>}
                                 <img src={buyIcon} alt="Перейти на страницу с корзиной"/>
                                 <p className="text">Корзина</p>
                             </Link>

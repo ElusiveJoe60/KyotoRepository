@@ -27,9 +27,9 @@ const Login = () => {
                         className="profile_icon"
                     />
                     <div className="profile_information">
-                        <h1 className="profile_information_item">Никита Кудряшов</h1>
-                        <p className="profile_information_item">+79788144245</p>
-                        <p className="profile_information_item">marbtop@gmail.com</p>
+                        <h1 className="profile_information_item">Example Example</h1>
+                        <p className="profile_information_item">+9(999)999-99-99</p>
+                        <p className="profile_information_item">example@gmail.com</p>
                         <MyButton style={{width: "150px"}} onClick={logout}>
                             Выйти из профиля
                         </MyButton>
