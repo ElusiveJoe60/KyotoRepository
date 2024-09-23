@@ -132,7 +132,7 @@ function ProductsByCategory() {
                     })}
                 </ul>
             ) : (
-                <h2>Нет продуктов в этой категории</h2>
+                <h2 className="no_products_by_category">Нет продуктов в этой категории</h2>
             )}
         </div>
     );

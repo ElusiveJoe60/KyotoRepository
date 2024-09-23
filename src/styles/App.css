@@ -435,6 +435,11 @@ html, body {
     align-items: center;
 }
 
+.no_products_by_category {
+    color: #C5C6C7;
+    font-family: "Josefin Sans", sans-serif;
+}
+
 .products_list_item_p {
     color: rgba(255, 255, 255, 0.65);
     font-family: "Josefin Sans", sans-serif;
@@ -688,7 +693,7 @@ html, body {
     max-width: 1200px;
     width: 100%;
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
