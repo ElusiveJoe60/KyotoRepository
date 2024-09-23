@@ -20,7 +20,7 @@ const SearchedAndSortedProducts = ({filter, setFilter, ...props}) => {
                     {value: "priceAsc", name: "По цене(возрастание)"},
                     {value: "priceDesc", name: "По цене(убывание)"},
                     {value: "ratingAsc", name: "По рейтингу(возрастание)"},
-                    {value: "ratingDesc", name: "По рейтингу(убывание"}
+                    {value: "ratingDesc", name: "По рейтингу(убывание)"}
                 ]}
             >
             </MySelect>
