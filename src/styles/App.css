@@ -6,7 +6,7 @@
 
 html, body {
     height: 100%; 
-    background-color: #1F2833;
+    background-color: #192029;
     display: flex;
     flex-direction: column; 
 }
@@ -21,26 +21,32 @@ html, body {
     position: relative;
 }
 
+.main {
+    width: 100%;
+    background-color: #12191f;
+    margin-bottom: 30px;
+}
+
 .navbar {
     flex-shrink: 0;
     width: 100%;
     max-width: 1200px;
-    height: 60px;
-    margin: 10px auto 80px;
+    height: 30px;
+    margin: 30px 20%;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 0;
     padding: 5px 10px 5px 10px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .navbar__main {
     font-size: 38px;
     color: #66FCF1;
-    margin-right: 60px;
     font-family: "Josefin Sans", sans-serif;
     cursor: pointer;
+    text-shadow: 1px 1px 2px black, 0 0 0.65em #66FCF1;
 }
 
 .navbar__links {
@@ -68,9 +74,15 @@ html, body {
     transition: ease-in-out .1s;
 }
 
+.text {
+    text-shadow: 1px 5px 10px black, 0 0 0.2em #ffffff;
+}
+
 .navbar__links__items__list .text {
     font-family: "Josefin Sans", sans-serif;
     color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .navbar__links__items__list:hover {
@@ -206,7 +218,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #1F2833;
+    background-color: #192029;
     margin-top: 15%;
 }
 
@@ -492,6 +504,7 @@ html, body {
     margin-right: 100px;
     display: inline;
     white-space: nowrap;
+    text-shadow: 4px 1px 5px black;
 }
 
 .selected_product_item_add_to_busket {
@@ -672,7 +685,8 @@ html, body {
 .navbar_buttons_container {
     display: flex;
     justify-content: space-between;
-    gap: 700px;
+    gap: 1000px;
+    align-items: center;
 }
 
 .products_container, .footer_container {
@@ -771,7 +785,7 @@ html, body {
     gap: 1200px;
     width: 100%;
     height: 100px;
-    background-color: #1a1c25;
+    background-color: #12191F;
     position: relative; 
     margin-top: auto; 
 }
@@ -780,6 +794,7 @@ html, body {
     font-family: "Josefin Sans", sans-serif;
     color: #C5C6C7;
     font-size: 16px;
+    text-shadow: 1px 1px 2px black, 0 0 0.35em #C5C6C7;
 }
 
 .footer_buttons {
