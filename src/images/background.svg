@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" width="100%" height="100%">
+  <rect width="1920" height="1080" fill="#192029" />
+
+  <path d="M0,800 Q480,700 960,850 T1920,800" fill="none" stroke="#24313b" stroke-width="20">
+    <animate 
+      attributeName="d" 
+      dur="8s" 
+      repeatCount="indefinite" 
+      values="
+        M0,800 Q480,700 960,850 T1920,800;
+        M0,820 Q480,750 960,870 T1920,820;
+        M0,800 Q480,700 960,850 T1920,800"
+      keyTimes="0; 0.5; 1" 
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+      calcMode="spline"
+    />
+  </path>
+
+  <path d="M0,900 Q480,1000 960,850 T1920,900" fill="none" stroke="#1e252d" stroke-width="10">
+    <animate 
+      attributeName="d" 
+      dur="10s" 
+      repeatCount="indefinite" 
+      values="
+        M0,900 Q480,1000 960,850 T1920,900;
+        M0,880 Q480,950 960,830 T1920,880;
+        M0,900 Q480,1000 960,850 T1920,900"
+      keyTimes="0; 0.5; 1" 
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+      calcMode="spline"
+    />
+  </path>
+
+  <path d="M0,600 Q480,500 960,650 T1920,600" fill="none" stroke="#2a3844" stroke-width="15">
+    <animate 
+      attributeName="d" 
+      dur="6s" 
+      repeatCount="indefinite" 
+      values="
+        M0,600 Q480,500 960,650 T1920,600;
+        M0,620 Q480,550 960,670 T1920,620;
+        M0,600 Q480,500 960,650 T1920,600"
+      keyTimes="0; 0.5; 1"
+      keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"
+      calcMode="spline"
+    />
+  </path>
+</svg>

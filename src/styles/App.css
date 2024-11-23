@@ -6,7 +6,8 @@
 
 html, body {
     height: 100%; 
-    background-color: #192029;
+    /* background-color: #192029; */
+    background: url(/src/images/background.svg);
     display: flex;
     flex-direction: column; 
 }
